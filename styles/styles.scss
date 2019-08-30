@@ -1,0 +1,94 @@
+@import "node_modules/sass-marlo/normalize";
+@import "node_modules/sass-marlo/sassmarlo";
+
+$pic-dark-blue: #616BC0;
+$pic-blue: #CCECF9;
+$pic-salmon: #F98AA0;
+$pic-yellow: #F4E38B;
+
+$font-primary: "Ovo", serif;
+$font-secondary: "Muli", sans-serif;
+
+@font-face {
+  font-family: 'Ovo';
+  font-weight: 400;
+  src: url('/static/fonts/Ovo-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-weight: 400;
+  src: url('/static/fonts/Muli.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-weight: 600;
+  src: url('/static/fonts/Muli-SemiBold.ttf') format('ttf');
+}
+
+body {
+  font-family: $font-secondary;
+}
+
+
+
+.header {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      color: lighten($gray, 15%);
+      font-weight: 600;
+      text-decoration: none;
+      transition-duration: .3s;
+
+      &:hover {
+        color: darken($pic-dark-blue, 10%);
+      }
+    }
+  }
+
+  .header--body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1 {
+      color: darken($pic-dark-blue, 5%);
+      font-family: $font-primary;
+      font-size: 4rem;
+      font-weight: normal;
+      margin: 1.5rem 0 0rem;
+
+    }
+
+    p {
+      color: lighten($pic-dark-blue, 20%);
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+
+    img {
+      width: 500px;
+    }
+  }
+
+}
+
+//globals
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1040px;
+}
+
+.alt-color {
+  color: darken($pic-yellow, 0);
+}
+
+.active {
+  color: darken($pic-dark-blue, 10%) !important;
+}

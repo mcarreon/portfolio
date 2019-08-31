@@ -126,37 +126,6 @@ $font-secondary: "Muli", sans-serif;
   .project--links {
     display: flex;
     flex-direction: row;
-
-    a {
-      background-color: darken($pic-dark-blue, 5%);
-      border-radius: 5px;
-      color: $white;
-      display: block;
-      font-weight: 600;
-      padding: $spacer * .7 $spacer * 1.5;
-      transition-duration: .3s;
-      text-decoration: none;
-
-      &.inactive {
-        background-color: darken($pic-dark-blue, 20%);
-        box-shadow: inset 2px 2px 0px 1px rgba(0,0,0,0.3);
-        text-decoration: line-through;
-      }
-
-      &:not(.inactive) {
-        
-        &:hover {
-          background-color: darken($pic-dark-blue, 15%);
-          box-shadow: 1px 1px 0px 1px $pic-salmon;
-          transform: translateX(-2px);
-        }
-  
-        &:active {
-          background-color: darken($pic-dark-blue, 20%);
-          box-shadow: none;
-        }
-      }
-    }
   }
 
   .project--tags {
@@ -194,6 +163,14 @@ $font-secondary: "Muli", sans-serif;
       &:hover {
         color: darken($pic-blue, 50%);
       }
+    }
+
+    a.button {
+      color: white;
+      font-size: 1rem;
+      font-family: $font-secondary;
+      font-weight: 400;
+      width: 150px;
     }
 
     &> div {
@@ -271,6 +248,37 @@ h2 {
 
 .border-bottom {
   border-bottom: 1px solid lighten($pic-blue, 5%);
+}
+
+a.button {
+  background-color: darken($pic-dark-blue, 5%);
+  border-radius: 5px;
+  color: $white;
+  display: block;
+  font-weight: 600;
+  padding: $spacer * .7 $spacer * 1.5;
+  transition-duration: .3s;
+  text-decoration: none;
+
+  &.inactive {
+    background-color: darken($pic-dark-blue, 20%);
+    box-shadow: inset 2px 2px 0px 1px rgba(0,0,0,0.3);
+    text-decoration: line-through;
+  }
+
+  &:not(.inactive) {
+    
+    &:hover {
+      background-color: darken($pic-dark-blue, 15%);
+      box-shadow: 1px 1px 0px 1px $pic-salmon;
+      transform: translateX(-2px);
+    }
+
+    &:active {
+      background-color: darken($pic-dark-blue, 20%);
+      box-shadow: none;
+    }
+  }
 }
 
 .alt-color {

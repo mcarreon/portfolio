@@ -7,6 +7,9 @@ const Project = ({ project }) => {
     storeImg = <a href={store} target="__blank"><img src="/static/chrome-badge.png" /></a>;
   }
 
+  let demoBtn = demo ? '' : 'inactive';
+  let sourceBtn = source ? '' : 'inactive'; 
+
   return (
     <div className="project p-3 mr-3 mb-3">
       <h3 className="my-1">{name}</h3>
@@ -18,10 +21,10 @@ const Project = ({ project }) => {
       <div className="mt-auto">
         <div className="project--links my-3">
           <div className="mr-4">
-            <a href={ demo } target="__blank" className={demo ? '' : 'inactive'}>Demo</a>
+            <a href={ demo } target="__blank" className={`button ${demoBtn}`}>Demo</a>
           </div>
           <div>
-            <a href={ source } target="__blank" className={source ? '' : 'inactive'} >Source</a>
+            <a href={ source } target="__blank" className={`button ${sourceBtn}`} >Source</a>
           </div>
         </div>
         <div className="project--tags">

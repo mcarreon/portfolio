@@ -17,14 +17,18 @@ class MyApp extends App {
   //
   //   return { ...appProps }
   // }
+  static async getInitialProps({ Component, router, ctx }) {
+    return { path: ctx.asPath }
+  }
 
 
   render() {
     
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, path } = this.props;
+    
     return (
       <div>
-        <Header />
+        <Header route={path}/>
         <Component {...pageProps} />
         <Footer />
       </div>

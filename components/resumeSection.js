@@ -8,8 +8,8 @@ const ResumeSection = ({ data, type }) => {
         <h4>{title}</h4>
         <p className="my-1">{`${dates[0]} - ${dates[1]} • ${length}`}</p>
         <ul className="pl-4">
-          {description.map(desc => (
-            <li className="pb-3">{desc}</li>
+          {description.map((desc, i) => (
+            <li className="pb-3" key={i}>{desc}</li>
           ))}
         </ul>
       </div>

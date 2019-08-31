@@ -17,10 +17,6 @@ class MyApp extends App {
   //
   //   return { ...appProps }
   // }
-  static async getInitialProps({ Component, router, ctx }) {
-    return { path: ctx.asPath }
-  }
-
 
   render() {
     
@@ -28,7 +24,7 @@ class MyApp extends App {
     
     return (
       <div>
-        <Header route={path}/>
+        <Header />
         <Component {...pageProps} />
         <Footer />
       </div>

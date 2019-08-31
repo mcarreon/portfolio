@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import Router from 'next/router';
+import { withRouter } from 'next/router';
 
 const links = [
   { href: "/", label: "Work" },
@@ -12,20 +12,20 @@ const links = [
   return link;
 });
 
-const Nav = ({route}) => {
+const Nav = ({router}) => {
 
   return (
     <nav className="container py-4">
       {links.map(({ key, href, label }) => {
         let link = (
           <Link href={href}>
-            <a className={href === route ? 'active' : ''}>{label}</a>
+            <a className={href === router.pathname ? 'active' : ''}>{label}</a>
           </Link>
         );
 
         return (
           <div className="mr-3" key={key}>
-            {label === "Contact" ? <a className={href === route ? 'active' : ''} href={href}>{label}</a> : link}
+            {label === "Contact" ? <a className={href === router.pathname ? 'active' : ''} href={href}>{label}</a> : link}
           </div>
         );
       })}
@@ -33,4 +33,4 @@ const Nav = ({route}) => {
   );
 };
 
-export default Nav;
+export default withRouter(Nav);

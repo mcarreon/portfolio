@@ -1,0 +1,96 @@
+{
+  "education": {
+    "type": "Education",
+    "data": [
+      {
+        "name": "Coding Bootcamp at UCLA Extension",
+        "title": "Full-Stack Web Development",
+        "dates": ["May 2018", "November 2018"],
+        "link": "https://bootcamp.uclaextension.edu/coding/"
+      },
+      {
+        "name": "UCLA",
+        "title": "B.A. in Applied Linguistics",
+        "subtitle": "Specialty in Computing",
+        "dates": ["Class of 2018"],
+        "link": "http://www.ucla.edu/"
+      }
+    ]
+  },
+  "experience": {
+    "type": "Experience",
+    "data": [
+      {
+        "name": "State of Fashion",
+        "title": "Full-Stack Developer (Contract)",
+        "dates": ["April 2019", "May 2019"],
+        "length": "2 mos",
+        "location": "Vernon, CA",
+        "description": [
+          "Improved client’s initial website design to promote higher user traffic and smooth user interaction.", 
+          "Created professional Shopify store from the ground up with liquid as the sole developer with custom Shopify components and Sass styling while adhering to a tight deadline.",
+          "Modified core Shopify theme editor functionality to allow client to easily modify custom theme components.", 
+          "Worked with SEO Engineer to provide a thorough competitive SEO analysis."],
+        "link": "https://stateoffashion.com/"
+      },
+      {
+        "name": "Bailey Moss",
+        "title": "Front-End Developer (Contract)",
+        "dates": ["March 2019", "June 2019"],
+        "length": "4 mos",
+        "location": "Vernon, CA",
+        "description": [
+          "Developed new components in Liquid for custom themed Shopify Store.",
+          "Actively involved in research and development of new site features and marketing strategies.",
+          "Improved current site SEO to increase traffic and visibility.",
+          "Used Sass and jQuery to increase user interaction and streamline shopping experience."
+        ],
+        "link": "https://www.baileymoss.com/"
+      },
+      {
+        "name": "Wawa's Boot Camp",
+        "title": "Professional eSports Athlete",
+        "dates": ["April 2017", "November 2017"],
+        "length": "7 mos",
+        "location": "Odenton, MD (Remote)",
+        "description": [
+          "Mastered and maintained skill level to stay in the top 3% of 35 million players.",
+          "Honed my split-second decision making, team coordination, and mental endurance through 40 hours of structured practice per week.",
+          "Competed in both online/LAN tournaments earning funds and equipment through consistent finishes in the top 8."
+        ],
+        "link": ""
+      }
+      
+    ]
+  },
+  "skills": {
+    "type": "Skills",
+    "data": [
+      {
+        "name": "Interpersonal",
+        "skills": ["Conflict Mediation", "Time Management", "Attention to Detail", "Adaptability", "Teamwork", "Leadership"]
+      },
+      {
+        "name": "Technical",
+        "skills": ["Front-End Developement", "Back-End Development", "Wireframing & Mockups", "Rapid Prototyping", "UI/UX Design", "Responsive Design & Mobile-First Development"]
+      }
+    ]
+  },
+  "tools": {
+    "type": "Tools",
+    "data": [
+      {
+        "name": "Languages",
+        "skills": ["JavaScript(ES5+)", "HTML5", "SASS/SCSS", "CSS3", "JSX", "Liquid", "Haskell", "C++"]
+      },
+      {
+        "name": "Technologies",
+        "skills": ["ReactJS", "NextJS", "(React) Bootstrap", "Express.js", "Babel", "Webpack", "REST API", "Redux", "Node", "MySQL", "MongoDB", "PostgreSQL", "Firebase/Firestore", "Ajax/Axios","jQuery", "Git", "Github/Gitlab", "Shopify", "Slate", "Google Analytics", "NPM", "Yarn"]
+      },
+      {
+        "name": "Programs",
+        "skills": ["Visual Studio Code", "Slack", "AdobeXD", "Adobe Illustrator", "Adobe Photoshop", "Microsoft Suite", "Google Suite", "Filezilla"]
+      }
+    ]
+  }
+}

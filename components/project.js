@@ -18,7 +18,7 @@ const Project = ({ project }) => {
       <div className="mt-auto">
         <div className="project--links my-3">
           <div className="mr-4">
-            <a href={ demo } target="__blank">Demo</a>
+            <a href={ demo } target="__blank" className={demo ? '' : 'inactive'}>Demo</a>
           </div>
           <div>
             <a href={ source } target="__blank" className={source ? '' : 'inactive'} >Source</a>
@@ -26,7 +26,7 @@ const Project = ({ project }) => {
         </div>
         <div className="project--tags">
           {tags.map(tag => (
-            <div className="mr-3 my-1 py-1 px-3">
+            <div className="mr-3 my-1 py-1 px-3" key={tag}>
               <p className="m-0">{tag}</p>
             </div>
           ))}

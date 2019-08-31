@@ -1,6 +1,7 @@
 import React from "react";
-import App, { Container } from "next/app";
+import App from "next/app";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 import "../styles/styles.scss";
 
@@ -25,6 +26,7 @@ class MyApp extends App {
       <div>
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </div>
     );
   }

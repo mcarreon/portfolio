@@ -1,17 +1,14 @@
 const withFonts = require('next-fonts');
 const withSass = require('@zeit/next-sass');
 const withPlugins = require('next-compose-plugins');
+const { parsed: localEnv } = require('dotenv').config();
+const webpack = require('webpack');
 
 const nextConfig = {
-  test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-  use: {
-    loader: 'url-loader',
-    options: {
-      limit: 100000
-    },
-    publicPath: "./",
-    outputPath: "static/",
-    name: "[name].[ext]"
+  webpack(config) {
+    config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
+
+    return config
   }
 };
 

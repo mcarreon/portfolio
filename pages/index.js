@@ -22,6 +22,8 @@ const Home = () => {
     project = value.filter(doc => {
       return doc.type === "project";
     });
+
+    console.log(project);
   }
 
 

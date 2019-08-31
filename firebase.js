@@ -2,13 +2,13 @@ import * as firebase from "firebase";
 import 'firebase/firestore';
 
 const config = {
-  apiKey: "AIzaSyAveOXHTsNxvho6NK5eaAFKnUSgw4obq-M",
-  authDomain: "personal-portfolio-2c440.firebaseapp.com",
-  databaseURL: "https://personal-portfolio-2c440.firebaseio.com",
-  projectId: "personal-portfolio-2c440",
-  storageBucket: "personal-portfolio-2c440.appspot.com",
-  messagingSenderId: "533684567157",
-  appId: "1:533684567157:web:f55c698b12d637cb"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 export default !firebase.apps.length ? firebase.initializeApp(config).firestore() : firebase.app().firestore();

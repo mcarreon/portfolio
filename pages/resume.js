@@ -1,6 +1,6 @@
 const Resume = () => (  
   <div>
-
+    
   </div>
 );
 

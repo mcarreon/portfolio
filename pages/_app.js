@@ -1,7 +1,6 @@
 import React from "react";
 import App, { Container } from "next/app";
 import Header from "../components/header";
-import Router from 'next/router';
 
 import "../styles/styles.scss";
 
@@ -18,14 +17,15 @@ class MyApp extends App {
   //   return { ...appProps }
   // }
 
+
   render() {
     
     const { Component, pageProps } = this.props;
     return (
-      <Container>
+      <div>
         <Header />
         <Component {...pageProps} />
-      </Container>
+      </div>
     );
   }
 }

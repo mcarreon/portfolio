@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React from "react";
 import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 import Project from '../components/project'; 
 import db from "../firebase";
 
 const Home = () => {
+
+  //Load data from Firebase
   const [value, loading, error] = useCollectionDataOnce(
     db.collection("projects")
   );
   let work, project = [];
 
+
+  //Sort out projects to separate arrays
   if (value !== undefined) {
     value.sort((a, b) => {
       return b.date.seconds - a.date.seconds;
@@ -23,10 +26,10 @@ const Home = () => {
       return doc.type === "project";
     });
 
-    console.log(project);
+    //console.log(project);
   }
 
-
+  //Catch loading state
   if (value === undefined) {
     return (
       <div className="work mt-6 container mb-8">

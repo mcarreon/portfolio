@@ -8,16 +8,8 @@ const nextConfig = {
   webpack(config) {
     config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
 
-    return config
+    return config;
   }
 };
 
-module.exports = withPlugins([withFonts, withSass, {
-  exportPathMap: function() {
-    return {
-      '/': { page: '/' },
-      '/resume': { page: '/resume' },
-      '/blog': { page: '/blog' },
-    };
-  }
-}], nextConfig);
+module.exports = withPlugins([withFonts, withSass], nextConfig);

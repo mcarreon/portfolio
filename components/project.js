@@ -4,7 +4,7 @@ const Project = ({ project }) => {
   let storeImg; 
 
   if (store) {
-    storeImg = <a href={store} target="__blank"><img src="/static/chrome-badge.png" /></a>;
+    storeImg = <a href={store} target="__blank" aria-label="Chrome Store Badge"><img src="/static/chrome-badge.png" alt="Chrome Store Badge"/></a>;
   }
 
   let demoBtn = demo ? '' : 'inactive';

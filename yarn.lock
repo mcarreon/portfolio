@@ -2220,7 +2220,7 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0:
+debug@^4.0.0, debug@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -3941,6 +3941,14 @@ next-fonts@^0.18.0:
     file-loader "^2.0.0"
     url-loader "^1.1.1"
 
+next-ga@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/next-ga/-/next-ga-2.3.4.tgz#0bec23e7c2eea35485af0b342e7794bbbdb61d04"
+  integrity sha512-mIol83ehPCz9Z+QtK6ig1w9Db4ShoyhjS6NgDnTIVJuBQ1iobiZap2xXn6KtYWBc+AH5DdTCBtZRF8PP5yJAVA==
+  dependencies:
+    debug "^4.0.0"
+    react-ga "^2.5.3"
+
 next-server@9.0.5:
   version "9.0.5"
   resolved "https://registry.yarnpkg.com/next-server/-/next-server-9.0.5.tgz#4b7fe976d0900dd865b3c5777287ccd4df200794"
@@ -4828,6 +4836,11 @@ react-firebase-hooks@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-firebase-hooks/-/react-firebase-hooks-2.1.0.tgz#c7228cbfec9e886a2b5de1ec63a74c0095506a96"
   integrity sha512-b5o09O0OnVh5hFOEmEhiYRTqRe67I4mGk9zX+admBI6rwVWOYytrsTwXV5RhSfsAtmcvsbsRxI0VBJ6M45vXBw==
+
+react-ga@^2.5.3:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.6.0.tgz#c3fe830ead2ad25117e1d33280d9698de9b28496"
+  integrity sha512-GWHBWZDFjDGMkIk1LzroIn0mNTygKw3adXuqvGvheFZvlbpqMPbHsQsTdQBIxRRdXGQM/Zq+dQLRPKbwIHMTaw==
 
 react-is@16.8.6:
   version "16.8.6"

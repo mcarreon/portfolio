@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { withRouter } from 'next/router';
 
+//Set up link routing for navbar
 const links = [
   { href: "/", label: "Work" },
   { href: "/resume", label: "Resume" },

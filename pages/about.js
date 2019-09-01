@@ -22,8 +22,8 @@ const About = () => {
         </div>
         <div className="about--content">
           <h3>Hello!</h3>
-          {about.data.map(text => (
-            <p>{text}</p>
+          {about.data.map((text, i) => (
+            <p key={i} >{text}</p>
           ))}
         </div>
       </div>

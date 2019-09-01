@@ -18,9 +18,11 @@
     "next-fonts": "^0.18.0",
     "next-ga": "^2.3.4",
     "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-firebase-hooks": "^2.1.0",
+    "react-sidebar": "^3.0.2",
     "sass-marlo": "^1.0.1"
   }
 }

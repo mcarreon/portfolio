@@ -4,8 +4,15 @@ import Router from "next/router";
 import withGA from "next-ga";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import NProgress from "nprogress";
 
 import "../styles/styles.scss";
+
+Router.events.on('routeChangeStart', url => {
+  NProgress.start();
+})
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -19,6 +26,8 @@ class MyApp extends App {
   //
   //   return { ...appProps }
   // }
+
+
 
   render() {
     

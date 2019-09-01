@@ -81,6 +81,10 @@ $font-secondary: "Muli", sans-serif;
     }
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   .header--body {
     display: flex;
     flex-direction: row;
@@ -107,6 +111,60 @@ $font-secondary: "Muli", sans-serif;
   }
 
   @include xs {
+    nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: block;
+
+      .mobile-sidebar {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .mobile-sidebar--links {
+          
+          a {
+            color: $gray-dark;
+            font-size: 2rem;
+            font-family: $font-primary;
+          }
+        }
+
+        .mobile-sidebar--rose {
+
+          img {
+            animation: spin 15s linear infinite;
+          }
+          
+        }
+      }
+
+
+
+      button {
+        background-color: white;
+        border: 1px solid lighten($gray, 25%);
+        color: lighten($gray, 10%);
+        cursor: pointer;
+        font-size: .9rem;
+        outline: none;
+        padding: 5px 10px;
+        transition-duration: .3s;
+
+        &:hover {
+          box-shadow: .5px .5px 0px .5px $pic-blue;
+          transform: translateX(-2px);
+        }
+
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+
     .header--body {
       flex-direction: column;
       margin-top: $spacer * 1;
@@ -651,5 +709,32 @@ a.button {
   }
 }   
 
-//MEDIA QUERIES
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
 

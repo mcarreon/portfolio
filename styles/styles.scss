@@ -486,13 +486,17 @@ $font-secondary: "Muli", sans-serif;
         list-style: none;
 
         li {
-          transition-duration: .3s;
 
           a {
             color: darken($pic-blue, 40%);
+            display: inline-block;
             font-weight: 600;
             transition-duration: .3s;
   
+            &:hover {
+              transform: translateX(10px);
+            }
+
             span::after {
               border-bottom: 2px solid darken($pic-blue, 40%);
               border-right: 2px solid darken($pic-blue, 40%);
@@ -504,14 +508,12 @@ $font-secondary: "Muli", sans-serif;
               transform: rotate(-45deg);
               width: 5.5px;
   
-  
             }
   
+            
           }
 
-          &:hover {
-            transform: translateX(10px);
-          }
+          
         }
 
         

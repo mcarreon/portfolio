@@ -3,7 +3,7 @@ const ResumeSection = ({ data, type }) => {
     const { name, title, dates, length, location, description, link } = data;
 
     return (
-      <div className="mt-4">
+      <div>
         {link ? <a href={link}>{name}</a> : <h3>{name}</h3>}
         <h4>{title}</h4>
         <p className="my-1">{`${dates[0]} - ${dates[1]} • ${length}`}</p>
@@ -18,7 +18,7 @@ const ResumeSection = ({ data, type }) => {
     const { name, title, subtitle, dates, link } = data;
 
     return (
-      <div className="mt-4">
+      <div className="education mb-4">
         {link ? <a href={link}>{name}</a> : <h3>{name}</h3>}
         <h4>{title}</h4>
         <p className="my-1">{name === "UCLA" ? `${subtitle}` : ""}</p>
@@ -32,8 +32,8 @@ const ResumeSection = ({ data, type }) => {
     const parseSkills = skills.join(', ');
 
     return (
-      <div className="mt-4 skills">
-        <h3>{name}</h3>
+      <div className="skills">
+        <h3 className="mt-0">{name}</h3>
         <p>{parseSkills}</p>
       </div>
     );

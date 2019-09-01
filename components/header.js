@@ -15,7 +15,9 @@ const Header = () => (
         <p>Full-Stack Developer <br/> in <span className="alt-color">Los Angeles</span></p>
       </div>
       <div>
-        <img src="../static/losangeles.jpg"/>
+        <div>
+          <img src="../static/losangeles.jpg"/>
+        </div>
       </div>
     </div>
   </div>

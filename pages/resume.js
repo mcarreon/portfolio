@@ -1,4 +1,4 @@
-import resume from '../static/resume.json';
+import resume from '../static/data.json';
 import ResumeSection from '../components/resumeSection';
 
 const Resume = () => {
@@ -7,7 +7,7 @@ const Resume = () => {
     <div className="resume mt-6 container">
       <h2 className="mb-3">Resume</h2>
       <div className="resume--body border-y">
-        <div className="border-bottom">
+        <div className="resume--row border-bottom">
           <h3>{resume.experience.type}</h3>
           <div>
             {resume.experience.data.map(data => (
@@ -15,7 +15,7 @@ const Resume = () => {
             ))}
           </div>
         </div>
-        <div className="border-bottom pb-4">
+        <div className="resume--row border-bottom pb-4">
           <h3>{resume.education.type}</h3>
           <div>
             {resume.education.data.map(data => (
@@ -23,7 +23,7 @@ const Resume = () => {
             ))}
           </div>
         </div>
-        <div className="border-bottom pb-4">
+        <div className="resume--row border-bottom pb-4">
           <h3>{resume.skills.type}</h3>
           <div>
             {resume.skills.data.map(data => (
@@ -31,7 +31,7 @@ const Resume = () => {
             ))}
           </div>
         </div>
-        <div className="border-bottom pb-4">
+        <div className="resume--row border-bottom pb-4">
           <h3>{resume.tools.type}</h3>
           <div>
             {resume.tools.data.map(data => (

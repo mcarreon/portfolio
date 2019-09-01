@@ -92,5 +92,25 @@
         "skills": ["Visual Studio Code", "Slack", "AdobeXD", "Adobe Illustrator", "Adobe Photoshop", "Microsoft Suite", "Google Suite", "Filezilla"]
       }
     ]
+  },
+  "connect": {
+    "type": "Connect",
+    "data": [
+      {
+        "name": "Github",
+        "link": "https://github.com/mcarreon"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/carryon/"
+      }
+    ]
+  },
+  "about": {
+    "type": "About",
+    "data": [
+      "Hi, I'm Marlo. I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. Some of my other interests include full-stack pancakes, home cooking, Reddit, foreign beers, making music, and snowboarding. I would love to develop a game like XCOM someday. I'm currently refining my SCSS skills and integrating Redux into my projects.", 
+      "Hi, I'm Marlo. I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. Some of my other interests include full-stack pancakes, home cooking, Reddit, foreign beers, making music, and snowboarding. I would love to develop a game like XCOM someday. I'm currently refining my SCSS skills and integrating Redux into my projects.", 
+      "Hi, I'm Marlo. I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. Some of my other interests include full-stack pancakes, home cooking, Reddit, foreign beers, making music, and snowboarding. I would love to develop a game like XCOM someday. I'm currently refining my SCSS skills and integrating Redux into my projects."]
   }
 }

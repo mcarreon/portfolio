@@ -27,6 +27,42 @@ $font-secondary: "Muli", sans-serif;
   src: url('/static/fonts/Muli-SemiBold.ttf') format('ttf');
 }
 
+@mixin xs {
+  @media (min-width: 0px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: 768px) and (max-width: 949px) {
+      @content;
+  }
+}
+
+// Medium + devices
+@mixin mdPlus {
+  @media (min-width: 950px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// Extra Large devices
+@mixin xl {
+  @media (min-width: 2200px) {
+      @content;
+  }
+}
+
+//START HEADER
+
 .header {
 
   nav {
@@ -70,7 +106,80 @@ $font-secondary: "Muli", sans-serif;
     }
   }
 
+  @include xs {
+    .header--body {
+      flex-direction: column;
+      margin-top: $spacer * 1;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include sm {
+    .header--body {
+      flex-direction: column;
+      margin-top: $spacer * 1;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+    }
+  }
+
+  @include md {
+    
+    .header--body {
+      flex-direction: column;
+      margin-top: $spacer * 1;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  @include mdPlus {
+
+    .header--body {
+
+      & >div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 400px;
+      }
+    }
+  }
 }
+
+//START FOOTER
 
 .footer {
   
@@ -81,9 +190,21 @@ $font-secondary: "Muli", sans-serif;
 
   a {
     color: darken($pic-dark-blue, 10%);
+    transition-duration: .5s;
+
+    &:hover {
+      color: darken($pic-dark-blue, 40%);
+    }
   }
 
+  @include xs {
+    a {
+      font-size: 1.3rem;
+    }
+  }
 }
+
+//START WORK
 
 .work {
 
@@ -96,6 +217,23 @@ $font-secondary: "Muli", sans-serif;
     display: flex;
     flex-wrap: wrap;
   }
+
+  @include xs {
+    .work--project-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @include sm {
+    .work--project-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 }
 
 .project {
@@ -140,18 +278,32 @@ $font-secondary: "Muli", sans-serif;
       font-weight: 600;
     }
   }
+
+  @include xs {
+    width: 90%;
+  }
+
+  @include sm {
+    width: 90%;
+  }
+
+  @include md {
+    width: 90%;
+  }
+  
+  @include mdPlus {
+    width: 43%;
+  }
 }
 
+//START RESUME
+
 .resume {
-  h3 {
-    font-family: $font-primary;
-    font-size: 1.5rem;
-    margin-top: $spacer * 1.5;
-  }
 
   .resume--body {
     display: grid;
     grid-template-rows: auto;
+    opacity: 0;
 
     a {
       color: darken($pic-blue, 40%);
@@ -162,7 +314,9 @@ $font-secondary: "Muli", sans-serif;
 
       &:hover {
         color: darken($pic-blue, 50%);
+        transform: translateX(10px);
       }
+
     }
 
     a.button {
@@ -173,12 +327,16 @@ $font-secondary: "Muli", sans-serif;
       width: 150px;
     }
 
-    &> div {
+    .resume--row {
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
+
+      &> div {
+        margin-top: $spacer * 2;
+      }
 
       h3 {
         margin-bottom: $spacer * 0;
@@ -207,15 +365,135 @@ $font-secondary: "Muli", sans-serif;
       }
 
       .skills {
+
         p {
           color: $gray-dark;
           line-height: 1.3;
+          margin-top: $spacer * .25;
+          margin-bottom: $spacer * 1.5;
         }
       }
     }
   }
+
+  @include xs {
+
+    .resume--body {
+
+      .resume--row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        &> h3, > a {
+          font-size: 1.8rem;
+        } 
+      }
+      
+    }
+  }
+
+  @include sm {
+
+    .resume--body {
+
+      .resume--row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        &> h3, > a {
+          font-size: 1.8rem;
+        } 
+      }
+      
+    }
+  }
 }
 
+//START ABOUT
+
+.about {
+
+  .about--body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    opacity: 0;
+
+    
+    .about--connect {
+
+      ul {
+        list-style: none;
+
+        li {
+          transition-duration: .3s;
+
+          a {
+            color: darken($pic-blue, 40%);
+            font-weight: 600;
+            transition-duration: .3s;
+  
+            span::after {
+              border-bottom: 2px solid darken($pic-blue, 40%);
+              border-right: 2px solid darken($pic-blue, 40%);
+              content: '';
+              display: inline-block;
+              height: 5.5px;
+              margin: 0px 0 2px 7px;
+              position: relative;
+              transform: rotate(-45deg);
+              width: 5.5px;
+  
+  
+            }
+  
+          }
+
+          &:hover {
+            transform: translateX(10px);
+          }
+        }
+
+        
+      }
+    }
+
+    .about--content {
+      
+      p {
+        font-size: 1.1rem;
+        line-height: 1.55;
+        color: lighten($gray-dark, 20%);
+      }
+    }
+  }
+
+  @include xs {
+
+    .about--body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+      .about--connect {
+        grid-row-start: 2;
+      }
+    }
+  }
+
+  @include sm {
+
+    .about--body {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+      .about--connect {
+        grid-row-start: 2;
+      }
+    }
+  }
+}
 
 
 //globals
@@ -235,10 +513,36 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  margin-top: $spacer * 2;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1040px;
+
+  @include xs {
+    width: 85%;
+  }
+
+  @include sm {
+    width: 85%;
+  }
+
+  @include md {
+    width: 85%;
+  }
+
+  @include mdPlus {
+    width: 85%;
+  }
+  
+  @include xl {
+    width: 60%;
+  }
 }
 
 .border-y {
@@ -289,6 +593,8 @@ a.button {
   color: darken($pic-dark-blue, 10%) !important;
 }
 
+//ANIMATIONS
+
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -309,6 +615,14 @@ a.button {
 
 }
 
+.resume h2, .about h2 {
+  animation: fadeInLeft .8s ease-in-out forwards;
+}
+
+.resume--body, .about--body {
+  animation: fadeInLeft .4s ease-in-out .4s forwards;
+}
+
 @keyframes lds-ripple {
   0% {
     top: 28px;
@@ -325,3 +639,17 @@ a.button {
     opacity: 0;
   }
 }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}   
+
+//MEDIA QUERIES
+

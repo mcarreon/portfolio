@@ -85,7 +85,7 @@
       },
       {
         "name": "Technologies",
-        "skills": ["ReactJS", "NextJS", "(React) Bootstrap", "Express.js", "Babel", "Webpack", "REST API", "Redux", "Node", "MySQL", "MongoDB", "PostgreSQL", "Firebase/Firestore", "Ajax/Axios","jQuery", "Git", "Github/Gitlab", "Shopify", "Slate", "Google Analytics", "NPM", "Yarn"]
+        "skills": ["ReactJS", "NextJS", "(React) Bootstrap", "Express.js", "Babel", "Webpack", "REST API", "Redux", "Node", "MySQL", "MongoDB", "PostgreSQL", "Firebase/Firestore", "ZEIT Now", "Ajax/Axios","jQuery", "Git", "Github/Gitlab", "Shopify", "Slate", "Google Analytics", "NPM", "Yarn"]
       },
       {
         "name": "Programs",

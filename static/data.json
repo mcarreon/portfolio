@@ -85,7 +85,7 @@
       },
       {
         "name": "Technologies",
-        "skills": ["ReactJS", "NextJS", "(React) Bootstrap", "Express.js", "Babel", "Webpack", "REST API", "Redux", "Node", "MySQL", "MongoDB", "PostgreSQL", "Firebase/Firestore", "ZEIT Now", "Ajax/Axios","jQuery", "Git", "Github/Gitlab", "Shopify", "Slate", "Google Analytics", "NPM", "Yarn"]
+        "skills": ["ReactJS", "NextJS", "(React) Bootstrap", "Express.js", "GatsbyJS", "Babel", "Webpack", "REST API", "Redux", "Node", "MySQL", "MongoDB", "PostgreSQL", "Firebase/Firestore", "ZEIT Now", "Ajax/Axios","jQuery", "Git", "Github/Gitlab", "Shopify", "Slate", "Google Analytics", "NPM", "Yarn"]
       },
       {
         "name": "Programs",
@@ -111,7 +111,7 @@
     "data": [
       "Hi, I'm Marlo Carreon, a front-end/back-end developer and a proud UCLA alumni. I enjoy working collaboratively with other developers to deliver simple and intuitive web experiences. On my off time, you can find me learning and tinkering with new web technologies while sharpening my skills with tech I'm more comfortable with.",
       "I'm currently looking for an opportunity to establish my career in web development here in LA, however I'm open to any other locations. While freelancing, I've worked with fashion startups to help establish their web presence by creating their website from the ground up, as well as maintaining and improving their current online store.",
-      "I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. I've always had a passion for computers growing up, and I was able to fulfill a childhood dream of mine - playing video games semi-professionally. I'm still an avid gamer when I have the time, and am forever working on my cooking skills. In the winter months, I'm probably out catching some powdery slopes, but when I'm not, im usually browsing Reddit, looking for new recipes to try out, drinking coffee, or working on my next project."
+      "I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. I've always had a passion for computers growing up, and I was able to fulfill a childhood dream of mine - playing video games semi-professionally. I'm still an avid gamer when I have the time, and am forever working on my cooking skills. In the winter months, I'm probably out catching some powdery slopes, but when I'm not, I'm usually browsing Reddit, looking for new recipes to try out, drinking coffee, or working on my next project."
     ]
   }
 }

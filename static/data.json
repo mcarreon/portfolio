@@ -22,28 +22,27 @@
     "data": [
       {
         "name": "State of Fashion",
-        "title": "Full-Stack Developer (Contract)",
+        "title": "Full-Stack Developer (Consultant)",
         "dates": ["April 2019", "Present"],
         "length": "current",
         "location": "Vernon, CA",
         "description": [
           "Improved client’s initial website design to promote higher user traffic and smooth user interaction.", 
-          "Created professional Shopify store from the ground up with liquid as the sole developer with custom Shopify components and Sass styling while adhering to a tight deadline.",
-          "Modified core Shopify theme editor functionality to allow client to easily modify custom theme components.", 
-          "Worked with SEO Engineer to provide a thorough competitive SEO analysis."],
+          "Created professional multi-page consulting website from the ground up with Liquid as the sole developer creating custom Shopify components and Scss styling while adhering to a tight deadline.",
+          "Built custom team section and service description components compatible with Shopify theme editor that allowed easy modification.", 
+          "Assisted SEO Engineer to provide a thorough competitive SEO analysis and implement SEO strategies."],
         "link": "https://stateoffashion.com/"
       },
       {
         "name": "Bailey Moss",
-        "title": "Front-End Developer (Contract)",
+        "title": "Front-End Developer (Consultant)",
         "dates": ["March 2019", "June 2019"],
         "length": "4 mos",
         "location": "Vernon, CA",
         "description": [
-          "Developed new components in Liquid for custom themed Shopify Store.",
-          "Actively involved in research and development of new site features and marketing strategies.",
-          "Improved current site SEO to increase traffic and visibility.",
-          "Used Sass and jQuery to increase user interaction and streamline shopping experience."
+          "Developed new lookbook, collections, and product selection components in Liquid, Scss, and jQuery for a custom themed Shopify Store boosting store conversion rates by 39%.",
+          "Refined product selection experience with designed interactive elements that parsed product descriptions leading to an increase in average order values by 78%.",
+          "Improved current site SEO to increase visibility and enhanced sessions from search by ~50%."
         ],
         "link": "https://www.baileymoss.com/"
       },
@@ -110,7 +109,7 @@
     "type": "About",
     "data": [
       "Hi, I'm Marlo Carreon, a front-end/back-end developer and a proud UCLA alumni. I enjoy working collaboratively with other developers to deliver simple and intuitive web experiences. On my off time, you can find me learning and tinkering with new web technologies while sharpening my skills with tech I'm more comfortable with.",
-      "I'm currently looking for an opportunity to establish my career in web development here in LA, however I'm open to any other locations. While freelancing, I've worked with fashion startups to help establish their web presence by creating their website from the ground up, as well as maintaining and improving their current online store.",
+      "I'm currently looking for an opportunity to further establish my career in web development here in LA, however I'm open to any other locations. While freelancing, I've worked with clients in the fashion, education, and medical industries to help establish their web presence by creating their website from the ground up, as well as maintaining and improving their current online store.",
       "I was raised an avid gamer thanks to my father, and (hopefully) a good cook thanks to my mother. I've always had a passion for computers growing up, and I was able to fulfill a childhood dream of mine - playing video games semi-professionally. I'm still an avid gamer when I have the time, and am forever working on my cooking skills. In the winter months, I'm probably out catching some powdery slopes, but when I'm not, I'm usually browsing Reddit, looking for new recipes to try out, drinking coffee, or working on my next project."
     ]
   }

@@ -42,7 +42,7 @@ const Resume = () => {
         <div className="pb-4">
           <h3>Download</h3>
           <div className="mt-4">
-            <a className="button" href="https://docs.google.com/document/d/1cj_cSFyh4RjTZMfYS4KJn3dUCruDaiQ2-WNMe0uvvbk/export?format=pdf">Download Resume</a>
+            <a className="button" href="https://docs.google.com/document/d/1H5YAUGaZbJSruG4lCfjjZ1YxlAfg25gsY2qxXWOMWas/export?format=pdf">Download Resume</a>
           </div>
         </div>
       </div>

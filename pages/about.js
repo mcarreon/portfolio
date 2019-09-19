@@ -15,7 +15,7 @@ const About = () => {
           <div>
             <ul className="pl-0">
               {connect.data.map(data => (
-                <li className="mt-3" key={data.name}><a href={data.link}><span>{data.name}</span></a></li>
+                <li className="mt-3" key={data.name}><a href={data.link} target="__blank"><span>{data.name}</span></a></li>
               ))}
             </ul>
           </div>

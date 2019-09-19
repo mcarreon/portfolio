@@ -9,7 +9,7 @@ const Home = () => {
   const [value, loading, error] = useCollectionDataOnce(
     db.collection("projects")
   );
-  let work, project = [];
+  let work, project, packages = [];
 
 
   //Sort out projects to separate arrays
@@ -24,6 +24,10 @@ const Home = () => {
 
     project = value.filter(doc => {
       return doc.type === "project";
+    });
+
+    packages = value.filter(doc => {
+      return doc.type === "package";
     });
 
     //console.log(project);
@@ -60,6 +64,15 @@ const Home = () => {
       <h2>Projects</h2>
       <div className="work--project-container">
         {project.map((data, i) => {
+          return <Project 
+          key={i}
+          project={data}
+          />;
+        })}
+      </div>
+      <h2>Packages</h2>
+      <div className="work--project-container">
+        {packages.map((data, i) => {
           return <Project 
           key={i}
           project={data}
